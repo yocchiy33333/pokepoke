@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: lightskyblue;
+    color: white;
+}
+
+img{
+    width: 275px;
+}
+
+.hide{
+    display: none;
+}
