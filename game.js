@@ -39,17 +39,13 @@ if(randomNum === 0){
     if(num === randomNum){
         result.innerText='効果は普通だ'
     }else if(num ===1 && randomNum===0){
-        myhp--=200
         result.innerText='効果は抜群だ'
     }else if(num ===2 && randomNum===1){
-        myhp-=300
         result.innerText='効果は抜群だ'
     }else if(num ===0 && randomNum=== 2){
-        myhp-=300
         result.innerText='効果は抜群だ'
     }else{
         result.innerText='効果は今ひとつだ..'
-        myhp-=100
     }
 restart.classList.remove('hide')
 }
