@@ -7,7 +7,8 @@ const result = document.getElementById('result');
 const restart = document.getElementById('restart');
 
 let endFlag = false;
-
+let myhp = 1000;
+let rivalhp = 1000;
 function game (nun){
 if(endFlag){
     return;
@@ -38,13 +39,17 @@ if(randomNum === 0){
     if(nun === randomNum){
         result.innerText='効果は普通だ'
     }else if(nun ===1 && randomNum===0){
+        myhp--200
         result.innerText='効果は抜群だ'
     }else if(nun ===2 && randomNum===1){
+        myhp-300
         result.innerText='効果は抜群だ'
     }else if(nun ===0 && randomNum=== 2){
+        myhp-300
         result.innerText='効果は抜群だ'
     }else{
         result.innerText='効果は今ひとつだ..'
+        myhp-100
     }
 restart.classList.remove('hide')
 }
