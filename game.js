@@ -9,17 +9,17 @@ const restart = document.getElementById('restart');
 let endFlag = false;
 let myhp = 1000;
 let rivalhp = 1000;
-function game (nun){
+function game(num){
 if(endFlag){
     return;
 }
 endFlag=true;
 
     mein.innerText='戦闘開始！'
-    if(nun === 0){
+    if(num === 0){
         hono.classList.add('hide')
         mizu.classList.add('hide')
-    }else if(nun === 1){
+    }else if(num === 1){
         kusa.classList.add('hide')
         mizu.classList.add('hide')
     }else{
@@ -38,13 +38,13 @@ if(randomNum === 0){
 
     if(nun === randomNum){
         result.innerText='効果は普通だ'
-    }else if(nun ===1 && randomNum===0){
+    }else if(num ===1 && randomNum===0){
         myhp--200
         result.innerText='効果は抜群だ'
-    }else if(nun ===2 && randomNum===1){
+    }else if(num ===2 && randomNum===1){
         myhp-300
         result.innerText='効果は抜群だ'
-    }else if(nun ===0 && randomNum=== 2){
+    }else if(num ===0 && randomNum=== 2){
         myhp-300
         result.innerText='効果は抜群だ'
     }else{
