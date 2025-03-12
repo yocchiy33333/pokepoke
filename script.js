@@ -50,7 +50,7 @@ restart.classList.remove('hide')
 }
 
 restart.onclick= () => {
-mein.innerText='ポケモンを選択してください'
+mein.innerText='キャラを選択してください'
 raibaru.src="sports_baseball_man_asia.png";
 kusa.classList.remove('hide');
 hono.classList.remove('hide');
