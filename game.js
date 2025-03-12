@@ -29,11 +29,11 @@ endFlag=true;
     const randomNum = Math.floor(Math.random()*3)
 
 if(randomNum === 0){
-    raibaru.src="visual.png";
+    raibaru.src="pet_cat_kedukuroi.png";
 }else if(randomNum === 1){
-    raibaru.src="visual (1).png";
+    raibaru.src="wani_open.png";
 }else{
-    raibaru.src="kuwassu.png"
+    raibaru.src="bird_duck_ahiru.png"
 }
 
     if(num === randomNum){
